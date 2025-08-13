@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Demo</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 id="site-title">CSS Box Model Showcase</h1>
+        <nav class="navigation">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#about">About</a></li>
+                <li class="nav-item"><a href="#selectors">Selectors</a></li>
+                <li class="nav-item"><a href="#examples">Examples</a></li>
+                <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="container">
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2 class="section-title">Understanding CSS Box Model</h2>
+            <p class="intro-text">The CSS box model consists of content, padding, border, and margin.</p>
+            
+            <div class="feature-cards">
+                <div class="card primary-card">
+                    <h3 class="card-title">Content</h3>
+                    <p class="card-description">The actual content like text and images.</p>
+                    <div class="example-box content-demo">Content Area</div>
+                </div>
+                <div class="card secondary-card">
+                    <h3 class="card-title">Padding</h3>
+                    <p class="card-description">Space between content and border.</p>
+                    <div class="example-box padding-demo">Padded Content</div>
+                </div>
+                <div class="card tertiary-card">
+                    <h3 class="card-title">Border</h3>
+                    <p class="card-description">Line around padding and content.</p>
+                    <div class="example-box border-demo">Bordered Content</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Selectors Section -->
+        <section id="selectors" class="content-section highlighted-section">
+            <h2 class="section-title">CSS Selector Types</h2>
+            <div class="selector-examples">
+                <article class="selector-type">
+                    <h3 class="type-title">Element Selectors</h3>
+                    <p class="type-description">Target HTML elements by tag name.</p>
+                    <div class="demo-area">
+                        <h4 class="demo-heading">This heading uses element styling</h4>
+                        <p class="demo-paragraph">This paragraph demonstrates element selectors.</p>
+                    </div>
+                </article>
+                
+                <article class="selector-type">
+                    <h3 class="type-title">Class Selectors</h3>
+                    <p class="type-description">Use dot notation to target class attributes.</p>
+                    <div class="demo-area">
+                        <div class="highlight-box">Class selector example</div>
+                        <span class="special-text">Another class example</span>
+                    </div>
+                </article>
+                
+                <article class="selector-type">
+                    <h3 class="type-title">ID Selectors</h3>
+                    <p class="type-description">Use hash notation for unique elements.</p>
+                    <div class="demo-area">
+                        <div id="unique-element">Unique ID element</div>
+                        <span class="note-text">IDs should be unique per page</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="content-section">
+            <h2 class="section-title">Box Model Examples</h2>
+            <div class="examples-grid">
+                <div class="example-item">
+                    <h4 class="item-title">Small Padding</h4>
+                    <div class="box-demo small-padding">
+                        <p class="demo-text">Minimal padding example</p>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <h4 class="item-title">Medium Padding</h4>
+                    <div class="box-demo medium-padding">
+                        <p class="demo-text">Standard padding example</p>
+                    </div>
+                </div>
+                <div class="example-item">
+                    <h4 class="item-title">Large Padding</h4>
+                    <div class="box-demo large-padding">
+                        <p class="demo-text">Generous padding example</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-examples">
+                <div class="border-item solid-border">Solid Border</div>
+                <div class="border-item dashed-border">Dashed Border</div>
+                <div class="border-item dotted-border">Dotted Border</div>
+            </div>
+        </section>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3 class="sidebar-title">Quick Tips</h3>
+            <ul class="tips-list">
+                <li class="tip-item">Use <code>box-sizing: border-box</code> for easier calculations</li>
+                <li class="tip-item">Consistent spacing creates visual harmony</li>
+                <li class="tip-item">Class selectors are reusable</li>
+                <li class="tip-item">ID selectors are unique</li>
+                <li class="tip-item">Element selectors affect all instances</li>
+            </ul>
+            
+            <div class="tip-box">
+                <h4 class="tip-box-title">Remember</h4>
+                <p class="tip-box-text">Every HTML element follows the box model structure.</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="main-footer">
+        <div class="footer-content">
+            <h3 class="footer-title">Contact Information</h3>
+            <p class="footer-description">Learn more about CSS box model and selectors.</p>
+            <div class="contact-info">
+                <span class="contact-item">Email: info@model.com</span>
+                <span class="contact-item">Phone: 0740880948</span>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="copyright">&copy; 2025 hannah njuguna. Educational purposes.</p>
+        </div>
+    </footer>
+</body>
+</html>
